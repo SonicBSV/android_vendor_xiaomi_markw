@@ -675,7 +675,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/markw/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/markw/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/xiaomi/markw/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/xiaomi/markw/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/markw/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/xiaomi/markw/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
@@ -691,7 +690,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib/libqcmediaplayer.so:system/lib/libqcmediaplayer.so \
     vendor/xiaomi/markw/proprietary/lib/libsparse.so:system/lib/libsparse.so \
     vendor/xiaomi/markw/proprietary/lib/libtinyxml2.so:system/lib/libtinyxml2.so \
-    vendor/xiaomi/markw/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/xiaomi/markw/proprietary/lib64/libbthost_if.so:system/lib64/libbthost_if.so \
     vendor/xiaomi/markw/proprietary/lib64/libdhcpcd.so:system/lib64/libdhcpcd.so \
     vendor/xiaomi/markw/proprietary/lib64/libdisplayfeatureservice.so:system/lib64/libdisplayfeatureservice.so \
