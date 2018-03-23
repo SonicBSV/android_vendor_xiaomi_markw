@@ -19,6 +19,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/bin/gx_fpd:system/bin/gx_fpd \
     vendor/xiaomi/markw/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/xiaomi/markw/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/xiaomi/markw/proprietary/bin/mmi:system/bin/mmi \
+    vendor/xiaomi/markw/proprietary/bin/mmi_agent32:system/bin/mmi_agent32 \
+    vendor/xiaomi/markw/proprietary/bin/mmi_agent64:system/bin/mmi_agent64 \
+    vendor/xiaomi/markw/proprietary/bin/mmi_debug:system/bin/mmi_debug \
+    vendor/xiaomi/markw/proprietary/bin/mmi_diag:system/bin/mmi_diag \
     vendor/xiaomi/markw/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/xiaomi/markw/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/xiaomi/markw/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -54,12 +59,92 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/xiaomi/markw/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/xiaomi/markw/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/footer.xml:system/etc/mmi/layout/footer.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/footer_fail.xml:system/etc/mmi/layout/footer_fail.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/header.xml:system/etc/mmi/layout/header.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_battery.xml:system/etc/mmi/layout/layout_battery.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_bluetooth.xml:system/etc/mmi/layout/layout_bluetooth.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_button_backlight.xml:system/etc/mmi/layout/layout_button_backlight.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_camera_back.xml:system/etc/mmi/layout/layout_camera_back.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_camera_front.xml:system/etc/mmi/layout/layout_camera_front.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_cb.xml:system/etc/mmi/layout/layout_cb.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_common.xml:system/etc/mmi/layout/layout_common.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_confirm.xml:system/etc/mmi/layout/layout_confirm.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_cpu.xml:system/etc/mmi/layout/layout_cpu.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_emmc.xml:system/etc/mmi/layout/layout_emmc.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_feedback.xml:system/etc/mmi/layout/layout_feedback.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_fingerprint.xml:system/etc/mmi/layout/layout_fingerprint.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_flashlight.xml:system/etc/mmi/layout/layout_flashlight.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_fm.xml:system/etc/mmi/layout/layout_fm.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_gps.xml:system/etc/mmi/layout/layout_gps.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_gsensor.xml:system/etc/mmi/layout/layout_gsensor.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_gyroscope.xml:system/etc/mmi/layout/layout_gyroscope.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset.xml:system/etc/mmi/layout/layout_handset.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_hardwareinfo.xml:system/etc/mmi/layout/layout_hardwareinfo.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset.xml:system/etc/mmi/layout/layout_handset.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset_key.xml:system/etc/mmi/layout/layout_handset_key.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_infrared.xml:system/etc/mmi/layout/layout_infrared.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_key.xml:system/etc/mmi/layout/layout_key.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_lcd.xml:system/etc/mmi/layout/layout_lcd.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_lcd_backlight.xml:system/etc/mmi/layout/layout_lcd_backlight.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_led.xml:system/etc/mmi/layout/layout_led.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_led_blue.xml:system/etc/mmi/layout/layout_led_blue.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_led_green.xml:system/etc/mmi/layout/layout_led_green.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_led_red.xml:system/etc/mmi/layout/layout_led_red.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_loudspeaker.xml:system/etc/mmi/layout/layout_loudspeaker.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_lsensor.xml:system/etc/mmi/layout/layout_lsensor.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_memory.xml:system/etc/mmi/layout/layout_memory.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_mmi.xml:system/etc/mmi/layout/layout_mmi.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_mmi_audio.xml:system/etc/mmi/layout/layout_mmi_audio.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_msensor.xml:system/etc/mmi/layout/layout_msensor.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_nfc.xml:system/etc/mmi/layout/layout_nfc.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_pcba.xml:system/etc/mmi/layout/layout_pcba.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_primary_mic.xml:system/etc/mmi/layout/layout_primary_mic.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_psensor.xml:system/etc/mmi/layout/layout_psensor.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_reboot.xml:system/etc/mmi/layout/layout_reboot.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_recovery_ui.xml:system/etc/mmi/layout/layout_recovery_ui.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_report.xml:system/etc/mmi/layout/layout_report.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_sdcard.xml:system/etc/mmi/layout/layout_sdcard.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_sensor.xml:system/etc/mmi/layout/layout_sensor.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_simcard1.xml:system/etc/mmi/layout/layout_simcard1.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_simcard2.xml:system/etc/mmi/layout/layout_simcard2.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_system_info.xml:system/etc/mmi/layout/layout_system_info.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_touch.xml:system/etc/mmi/layout/layout_touch.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_touchext.xml:system/etc/mmi/layout/layout_touchext.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_vibrator.xml:system/etc/mmi/layout/layout_vibrator.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_wifi.xml:system/etc/mmi/layout/layout_wifi.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_wingtech_pcba.xml:system/etc/mmi/layout/layout_wingtech_pcba.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_main.xml:system/etc/mmi/layout/layout_main.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_main_1080.xml:system/etc/mmi/layout/layout_main_1080.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/112.wav:system/etc/mmi/112.wav \
+    vendor/xiaomi/markw/proprietary/etc/mmi/didi.wav:system/etc/mmi/didi.wav \
+    vendor/xiaomi/markw/proprietary/etc/mmi/fail.png:system/etc/mmi/fail.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/fonts.ttf:system/etc/mmi/fonts.ttf \
+    vendor/xiaomi/markw/proprietary/etc/mmi/mmi-audio.cfg:system/etc/mmi/mmi-audio.cfg \
+    vendor/xiaomi/markw/proprietary/etc/mmi/mmi-pcba.cfg:system/etc/mmi/mmi-pcba.cfg \
+    vendor/xiaomi/markw/proprietary/etc/mmi/mmi-sensor.cfg:system/etc/mmi/mmi-sensor.cfg \
+    vendor/xiaomi/markw/proprietary/etc/mmi/mmi.cfg:system/etc/mmi/mmi.cfg \
+    vendor/xiaomi/markw/proprietary/etc/mmi/music.wav:system/etc/mmi/music.wav \
+    vendor/xiaomi/markw/proprietary/etc/mmi/pagedown.png:system/etc/mmi/pagedown.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/pageup.png:system/etc/mmi/pageup.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/pass.png:system/etc/mmi/pass.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/path_config.xml:system/etc/mmi/path_config.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/poweroff.png:system/etc/mmi/poweroff.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/qualsound.wav:system/etc/mmi/qualsound.wav \
+    vendor/xiaomi/markw/proprietary/etc/mmi/reboot.png:system/etc/mmi/reboot.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/report.png:system/etc/mmi/report.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/reset.png:system/etc/mmi/reset.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/runall.png:system/etc/mmi/runall.png \
+    vendor/xiaomi/markw/proprietary/etc/mmi/strings-zh-rCN.xml:system/etc/mmi/strings-zh-rCN.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/strings.xml:system/etc/mmi/strings.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/wt-pcba.cfg:system/etc/mmi/wt-pcba.cfg \
     vendor/xiaomi/markw/proprietary/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
     vendor/xiaomi/markw/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/markw/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/xiaomi/markw/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/xiaomi/markw/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
     vendor/xiaomi/markw/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
+    vendor/xiaomi/markw/proprietary/lib/hw/lights.msm8953.so:system/lib/hw/lights.msm8953.so \
     vendor/xiaomi/markw/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/markw/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/xiaomi/markw/proprietary/lib/libdashplayer.so:system/lib/libdashplayer.so \
@@ -68,6 +153,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/markw/proprietary/lib64/hw/fingerprint.goodix.so:system/lib64/hw/fingerprint.goodix.so \
     vendor/xiaomi/markw/proprietary/lib64/hw/gxfingerprint.default.so:system/lib64/hw/gxfingerprint.default.so \
+    vendor/xiaomi/markw/proprietary/lib64/hw/lights.msm8953.so:system/lib64/hw/lights.msm8953.so \
     vendor/xiaomi/markw/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
     vendor/xiaomi/markw/proprietary/lib64/libfp_client.so:system/lib64/libfp_client.so \
     vendor/xiaomi/markw/proprietary/lib64/libfpnav.so:system/lib64/libfpnav.so \
@@ -667,8 +753,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/xiaomi/markw/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
     vendor/xiaomi/markw/proprietary/lib/libbthost_if.so:system/lib/libbthost_if.so \
-    vendor/xiaomi/markw/proprietary/lib/libdisplayfeatureservice.so:system/lib/libdisplayfeatureservice.so \
-    vendor/xiaomi/markw/proprietary/lib/libextmedia_jni.so:system/lib/libextmedia_jni.so \
     vendor/xiaomi/markw/proprietary/lib/libgabi++.so:system/lib/libgabi++.so \
     vendor/xiaomi/markw/proprietary/lib/liblogwrap.so:system/lib/liblogwrap.so \
     vendor/xiaomi/markw/proprietary/lib/libpdmapper.so:system/lib/libpdmapper.so \
@@ -678,8 +762,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/xiaomi/markw/proprietary/lib64/libbthost_if.so:system/lib64/libbthost_if.so \
     vendor/xiaomi/markw/proprietary/lib64/libdhcpcd.so:system/lib64/libdhcpcd.so \
-    vendor/xiaomi/markw/proprietary/lib64/libdisplayfeatureservice.so:system/lib64/libdisplayfeatureservice.so \
-    vendor/xiaomi/markw/proprietary/lib64/libextmedia_jni.so:system/lib64/libextmedia_jni.so \
     vendor/xiaomi/markw/proprietary/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
     vendor/xiaomi/markw/proprietary/lib64/libgabi++.so:system/lib64/libgabi++.so \
     vendor/xiaomi/markw/proprietary/lib64/libpdmapper.so:system/lib64/libpdmapper.so \
@@ -840,8 +922,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libsdsprpc.so:system/vendor/lib/libsdsprpc.so \
-    vendor/xiaomi/markw/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
-    vendor/xiaomi/markw/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libsi.so:system/vendor/lib/libsi.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
@@ -977,6 +1057,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_audio.so:system/vendor/lib/mmi_audio.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_battery.so:system/vendor/lib/mmi_battery.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_bluetooth.so:system/vendor/lib/mmi_bluetooth.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_camera.so:system/vendor/lib/mmi_camera.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_cpu.so:system/vendor/lib/mmi_cpu.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_fingerprint.so:system/vendor/lib/mmi_fingerprint.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_flashlight.so:system/vendor/lib/mmi_flashlight.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_fm.so:system/vendor/lib/mmi_fm.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_gps.so:system/vendor/lib/mmi_gps.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_headset.so:system/vendor/lib/mmi_headset.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_infrared.so:system/vendor/lib/mmi_infrared.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_key.so:system/vendor/lib/mmi_key.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_lcd.so:system/vendor/lib/mmi_lcd.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_light.so:system/vendor/lib/mmi_light.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_memory.so:system/vendor/lib/mmi_memory.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_nfc.so:system/vendor/lib/mmi_nfc.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_sensor.so:system/vendor/lib/mmi_sensor.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_sim.so:system/vendor/lib/mmi_sim.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_storage.so:system/vendor/lib/mmi_storage.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_sysinfo.so:system/vendor/lib/mmi_sysinfo.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_touch.so:system/vendor/lib/mmi_touch.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_touchext.so:system/vendor/lib/mmi_touchext.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_vibrator.so:system/vendor/lib/mmi_vibrator.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib/mmi_wifi.so:system/vendor/lib/mmi_wifi.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so \
@@ -1050,8 +1154,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/librmp.so:system/vendor/lib64/librmp.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libsdsprpc.so:system/vendor/lib64/libsdsprpc.so \
-    vendor/xiaomi/markw/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
-    vendor/xiaomi/markw/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libsi.so:system/vendor/lib64/libsi.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libsubsystem_control.so:system/vendor/lib64/libsubsystem_control.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libwfdavenhancements.so:system/vendor/lib64/libwfdavenhancements.so \
@@ -1254,6 +1356,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_audio.so:system/vendor/lib64/mmi_audio.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_battery.so:system/vendor/lib64/mmi_battery.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_bluetooth.so:system/vendor/lib64/mmi_bluetooth.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_camera.so:system/vendor/lib64/mmi_camera.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_cpu.so:system/vendor/lib64/mmi_cpu.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_fingerprint.so:system/vendor/lib64/mmi_fingerprint.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_flashlight.so:system/vendor/lib64/mmi_flashlight.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_fm.so:system/vendor/lib64/mmi_fm.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_gps.so:system/vendor/lib64/mmi_gps.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_headset.so:system/vendor/lib64/mmi_headset.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_infrared.so:system/vendor/lib64/mmi_infrared.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_key.so:system/vendor/lib64/mmi_key.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_lcd.so:system/vendor/lib64/mmi_lcd.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_light.so:system/vendor/lib64/mmi_light.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_memory.so:system/vendor/lib64/mmi_memory.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_nfc.so:system/vendor/lib64/mmi_nfc.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_sensor.so:system/vendor/lib64/mmi_sensor.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_sim.so:system/vendor/lib64/mmi_sim.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_storage.so:system/vendor/lib64/mmi_storage.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_sysinfo.so:system/vendor/lib64/mmi_sysinfo.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_touch.so:system/vendor/lib64/mmi_touch.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_touchext.so:system/vendor/lib64/mmi_touchext.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_vibrator.so:system/vendor/lib64/mmi_vibrator.so \
+    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_wifi.so:system/vendor/lib64/mmi_wifi.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/markw/proprietary/vendor/qcril.db:system/vendor/qcril.db
