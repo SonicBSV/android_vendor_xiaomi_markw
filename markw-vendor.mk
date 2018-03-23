@@ -81,8 +81,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_gyroscope.xml:system/etc/mmi/layout/layout_gyroscope.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset.xml:system/etc/mmi/layout/layout_handset.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_hardwareinfo.xml:system/etc/mmi/layout/layout_hardwareinfo.xml \
-    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset.xml:system/etc/mmi/layout/layout_handset.xml \
-    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_handset_key.xml:system/etc/mmi/layout/layout_handset_key.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_headset.xml:system/etc/mmi/layout/layout_headset.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_headset_key.xml:system/etc/mmi/layout/layout_headset_key.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_infrared.xml:system/etc/mmi/layout/layout_infrared.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_key.xml:system/etc/mmi/layout/layout_key.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_lcd.xml:system/etc/mmi/layout/layout_lcd.xml \
@@ -114,8 +114,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_vibrator.xml:system/etc/mmi/layout/layout_vibrator.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_wifi.xml:system/etc/mmi/layout/layout_wifi.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_wingtech_pcba.xml:system/etc/mmi/layout/layout_wingtech_pcba.xml \
-    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_main.xml:system/etc/mmi/layout/layout_main.xml \
-    vendor/xiaomi/markw/proprietary/etc/mmi/layout/layout_main_1080.xml:system/etc/mmi/layout/layout_main_1080.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/main.xml:system/etc/mmi/layout/main.xml \
+    vendor/xiaomi/markw/proprietary/etc/mmi/layout/main_1080.xml:system/etc/mmi/layout/main_1080.xml \
     vendor/xiaomi/markw/proprietary/etc/mmi/112.wav:system/etc/mmi/112.wav \
     vendor/xiaomi/markw/proprietary/etc/mmi/didi.wav:system/etc/mmi/didi.wav \
     vendor/xiaomi/markw/proprietary/etc/mmi/fail.png:system/etc/mmi/fail.png \
@@ -1359,7 +1359,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_audio.so:system/vendor/lib64/mmi_audio.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_battery.so:system/vendor/lib64/mmi_battery.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_bluetooth.so:system/vendor/lib64/mmi_bluetooth.so \
-    vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_camera.so:system/vendor/lib64/mmi_camera.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_cpu.so:system/vendor/lib64/mmi_cpu.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_fingerprint.so:system/vendor/lib64/mmi_fingerprint.so \
     vendor/xiaomi/markw/proprietary/vendor/lib64/mmi_flashlight.so:system/vendor/lib64/mmi_flashlight.so \
