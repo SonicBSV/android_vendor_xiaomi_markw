@@ -7,5 +7,5 @@
 
 <permissions>
  <library name="com.qualcomm.qti.lpa.uimlpalibrary"
-          file="/system/framework/uimlpalibrary.jar"/>
+          file="/vendor/framework/uimlpalibrary.jar"/>
 </permissions>
