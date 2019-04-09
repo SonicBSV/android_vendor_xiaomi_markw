@@ -996,6 +996,5 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     com.qualcomm.location \
     com.qti.snapdragon.sdk.display \
-    qti-telephony-common \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java 
