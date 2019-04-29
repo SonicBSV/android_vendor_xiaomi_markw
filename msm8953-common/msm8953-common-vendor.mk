@@ -707,6 +707,8 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     uceShimService \
+    remotesimlockservice \
+    uimlpaservice \
     CNEService \
     qcrilmsgtunnel \
     WfdService \
