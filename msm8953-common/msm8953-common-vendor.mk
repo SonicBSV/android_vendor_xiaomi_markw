@@ -19,12 +19,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/xiaomi/msm8953-common/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/xiaomi/msm8953-common/proprietary/bin/perfservice:system/bin/perfservice \
+    vendor/xiaomi/msm8953-common/proprietary/bin/audioserver:system/bin/audioserver \
     vendor/xiaomi/msm8953-common/proprietary/bin/move_time_data.sh:system/bin/move_time_data.sh \
     vendor/xiaomi/msm8953-common/proprietary/bin/move_wifi_data.sh:system/bin/move_wifi_data.sh \
     vendor/xiaomi/msm8953-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/msm8953-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/xiaomi/msm8953-common/proprietary/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
     vendor/xiaomi/msm8953-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
+    vendor/xiaomi/msm8953-common/proprietary/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
     vendor/xiaomi/msm8953-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/xiaomi/msm8953-common/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/xiaomi/msm8953-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
@@ -101,6 +103,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libaudiopolicyenginedefault.so:system/lib/libaudiopolicyenginedefault.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libaaudioservice.so:system/lib/libaaudioservice.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/liboemaids_system.so:system/lib/liboemaids_system.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/libdrm.so:system/lib/libdrm.so \
@@ -233,6 +240,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/xiaomi/msm8953-common/proprietary/lib64/drm/libfwdlockengine.so:system/lib64/drm/libfwdlockengine.so \
     vendor/xiaomi/msm8953-common/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libaudiopolicyenginedefault.so:system/lib64/libaudiopolicyenginedefault.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libaudiopolicyservice.so:system/lib64/libaudiopolicyservice.so \
     vendor/xiaomi/msm8953-common/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
     vendor/xiaomi/msm8953-common/proprietary/lib64/liboemaids_system.so:system/lib64/liboemaids_system.so \
     vendor/xiaomi/msm8953-common/proprietary/lib64/libdrm.so:system/lib64/libdrm.so \
@@ -497,6 +508,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/xiaomi/msm8953-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/msm8953-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
+    vendor/xiaomi/msm8953-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/xiaomi/msm8953-common/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/xiaomi/msm8953-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/xiaomi/msm8953-common/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    vendor/xiaomi/msm8953-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b00 \
     vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b01 \
     vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
