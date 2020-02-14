@@ -1,0 +1,79 @@
+soong_namespace {
+}
+
+dex_import {
+    name: "WfdCommon",
+    owner: "xiaomi",
+    jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+cc_prebuilt_library_shared {
+ name: "libantradio",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/lib/libantradio.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/lib64/libantradio.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "libqsap_sdk",
+ target: {
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/libqsap_sdk.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "liblbs_core",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/liblbs_core.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/liblbs_core.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "vendor.qti.hardware.fm@1.0",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}

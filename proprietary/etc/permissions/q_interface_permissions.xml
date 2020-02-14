@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/******************************************************************************
+* Copyright (c) 2018 Qualcomm Technologies, Inc.
+* All Rights Reserved.
+* Confidential and Proprietary - Qualcomm Technologies, Inc.
+*  *****************************************************************************
+*/
+-->
+<permissions>
+    <!--  Request permissions for DIAG -->
+    <permission name="com.qti.smq.permission.INTERFACE_DIAG">
+        <group gid="oem_2901" />
+        <group gid="readproc" />
+    </permission>
+
+    <privapp-permissions package="com.qti.smq.qualcommFeedback">
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+    </privapp-permissions>
+</permissions>
+
