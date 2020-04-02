@@ -27,20 +27,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
- name: "libqsap_sdk",
- target: {
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/libqsap_sdk.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
  name: "liblbs_core",
  target: {
    android_arm: {
