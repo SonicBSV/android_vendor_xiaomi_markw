@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/xiaomi/markw/proprietary/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/perfservice.rc \
     vendor/xiaomi/markw/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
-    vendor/xiaomi/markw/proprietary/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM)/etc/perf/wlc_model.tflite \
     vendor/xiaomi/markw/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/xiaomi/markw/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/markw/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -27,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/markw/proprietary/lib64/drm/libfwdlockengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/drm/libfwdlockengine.so \
     vendor/xiaomi/markw/proprietary/lib64/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/egl/libGLES_android.so \
-    vendor/xiaomi/markw/proprietary/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparserextractor.so \
     vendor/xiaomi/markw/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/xiaomi/markw/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/xiaomi/markw/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
@@ -48,8 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libldacBT_enc.so \
     vendor/xiaomi/markw/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
     vendor/xiaomi/markw/proprietary/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdsprpc_system.so \
-    vendor/xiaomi/markw/proprietary/lib64/libmediandk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmediandk.so \
-    vendor/xiaomi/markw/proprietary/lib64/libmedia.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia.so \
     vendor/xiaomi/markw/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
     vendor/xiaomi/markw/proprietary/lib64/libmmi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmi_jni.so \
     vendor/xiaomi/markw/proprietary/lib64/libmmi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmi.so \
@@ -67,12 +63,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/lib64/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-iopd-client_system.so \
     vendor/xiaomi/markw/proprietary/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-perfd-client_system.so \
     vendor/xiaomi/markw/proprietary/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-util_system.so \
-    vendor/xiaomi/markw/proprietary/lib64/libqti_workloadclassifiermodel.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_workloadclassifiermodel.so \
     vendor/xiaomi/markw/proprietary/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdm-disp-apis.so \
     vendor/xiaomi/markw/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
     vendor/xiaomi/markw/proprietary/lib64/libsensor1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensor1.so \
     vendor/xiaomi/markw/proprietary/lib64/libsensor_reg_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensor_reg_system.so \
-    vendor/xiaomi/markw/proprietary/lib64/libstagefright.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright.so \
     vendor/xiaomi/markw/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/xiaomi/markw/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/xiaomi/markw/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
@@ -1784,7 +1778,6 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     TimeService \
     WfdCommon \
-    workloadclassifier \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
