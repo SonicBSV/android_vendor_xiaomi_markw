@@ -7,23 +7,16 @@ dex_import {
     jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
-cc_prebuilt_library_shared {
- name: "libantradio",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/lib/libantradio.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/lib64/libantradio.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
+dex_import {
+    name: "QPerformance",
+    owner: "xiaomi",
+    jars: ["proprietary/framework/QPerformance.jar"],
+}
+
+dex_import {
+    name: "UxPerformance",
+    owner: "xiaomi",
+    jars: ["proprietary/framework/UxPerformance.jar"],
 }
 
 cc_prebuilt_library_shared {
@@ -56,6 +49,110 @@ cc_prebuilt_library_shared {
    android_arm64: {
      srcs: [
        "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "com.qualcomm.qti.bluetooth_audio@1.0",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "libbtconfigstore",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/lib/libbtconfigstore.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/lib64/libbtconfigstore.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "vendor.qti.hardware.capabilityconfigstore@1.0",
+ target: {
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "libdiag",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/libdiag.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/libdiag.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "android.hardware.bluetooth@1.0-impl-qti",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "com.qualcomm.qti.ant@1.0",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so",
      ],
    },
  },

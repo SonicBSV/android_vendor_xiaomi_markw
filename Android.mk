@@ -540,9 +540,9 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := MotoDolbyV3
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/app/MotoDolbyV3/MotoDolbyV3.apk
+LOCAL_MODULE := workloadclassifier
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/app/workloadclassifier/workloadclassifier.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -565,18 +565,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := dpmserviceapp
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_SRC_FILES := proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := daxService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/product/priv-app/daxService/daxService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
