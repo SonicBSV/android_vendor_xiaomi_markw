@@ -152,7 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/dpmapi.xml \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/embms.xml \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/lpa.xml \
-    vendor/xiaomi/markw/proprietary/product/etc/permissions/priv-app-permission-google_auto.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/priv-app-permission-google_auto.xml \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/RemoteSimlockManager.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlockManager.xml \
     vendor/xiaomi/markw/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlock.xml \
@@ -1765,7 +1764,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
-    AndroidAutoStub \
     embms \
     remotesimlockservice \
     uimlpaservice \
@@ -1774,8 +1772,6 @@ PRODUCT_PACKAGES += \
     CallFeaturesSetting \
     ConnectionSecurityService \
     SSGTelemetryService \
-    QDMA \
-    QDMA-UI \
     imssettings \
     uimremoteclient \
     uimremoteserver \

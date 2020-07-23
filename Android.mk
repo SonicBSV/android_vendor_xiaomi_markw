@@ -598,18 +598,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := AndroidAutoStub
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_SRC_FILES := proprietary/product/priv-app/ims/ims.apk
@@ -637,30 +625,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := SSGTelemetryService
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_SRC_FILES := proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA
-LOCAL_MODULE_OWNER  := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA/QDMA.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA-UI
-LOCAL_MODULE_OWNER  := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA-UI/QDMA-UI.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
