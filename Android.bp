@@ -7,18 +7,6 @@ dex_import {
     jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
-dex_import {
-    name: "QPerformance",
-    owner: "xiaomi",
-    jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-    name: "UxPerformance",
-    owner: "xiaomi",
-    jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
 cc_prebuilt_library_shared {
  name: "liblbs_core",
  target: {
@@ -30,25 +18,6 @@ cc_prebuilt_library_shared {
    android_arm64: {
      srcs: [
        "proprietary/vendor/lib64/liblbs_core.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
- name: "libantradio",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/lib/libantradio.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/lib64/libantradio.so",
      ],
    },
  },
@@ -77,30 +46,16 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
- name: "libbtconfigstore",
+ name: "libaudioparsers",
  target: {
    android_arm: {
      srcs: [
-       "proprietary/lib/libbtconfigstore.so",
+       "proprietary/vendor/lib/libaudioparsers.so",
      ],
    },
    android_arm64: {
      srcs: [
-       "proprietary/lib64/libbtconfigstore.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
- name: "vendor.qti.hardware.capabilityconfigstore@1.0",
- target: {
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so",
+       "proprietary/vendor/lib64/libaudioparsers.so",
      ],
    },
  },
@@ -139,25 +94,6 @@ cc_prebuilt_library_shared {
    android_arm64: {
      srcs: [
        "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
- name: "com.qualcomm.qti.ant@1.0",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so",
      ],
    },
  },
