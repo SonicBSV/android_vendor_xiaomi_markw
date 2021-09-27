@@ -11,7 +11,7 @@ LOCAL_MULTILIB      := 64
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libts_detected_face_hal.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -24,7 +24,7 @@ LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libts_detected_face_hal.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -37,7 +37,7 @@ LOCAL_MULTILIB      := 64
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libts_face_beautify_hal.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -50,7 +50,7 @@ LOCAL_MULTILIB      := 32
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libts_face_beautify_hal.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -63,7 +63,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -76,7 +76,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -89,7 +89,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmi_cci.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -102,7 +102,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmi_cci.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -115,7 +115,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmiservices.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -128,7 +128,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmiservices.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -141,7 +141,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmi_common_so.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -154,7 +154,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmi_common_so.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -167,7 +167,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libidl.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -180,7 +180,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libidl.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -193,7 +193,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libdsi_netctrl.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -206,7 +206,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libdsi_netctrl.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -219,7 +219,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libQSEEComAPI.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -232,7 +232,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libQSEEComAPI.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -245,7 +245,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterprovision.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -258,7 +258,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterprovision.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -271,7 +271,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterutils.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -284,7 +284,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterutils.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -297,7 +297,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterdeviceutils.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -310,7 +310,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterdeviceutils.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -323,7 +323,7 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 64
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib64/libsdsprpc.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -336,14 +336,14 @@ LOCAL_STRIP_MODULE  := false
 LOCAL_MULTILIB      := 32
 LOCAL_MODULE_TAGS   := optional
 LOCAL_SRC_FILES     := proprietary/vendor/lib/libsdsprpc.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := dsi_config.xml
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/system/vendor/etc/data
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/vendor/etc/data
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/vendor/etc/data/dsi_config.xml
 LOCAL_MODULE_OWNER := qti
@@ -352,7 +352,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := netmgr_config.xml
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/system/vendor/etc/data
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/vendor/etc/data
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/vendor/etc/data/netmgr_config.xml
 LOCAL_MODULE_OWNER := qti
@@ -652,7 +652,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -664,7 +664,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -676,7 +676,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -688,7 +688,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -700,7 +700,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -712,7 +712,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -736,7 +736,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
