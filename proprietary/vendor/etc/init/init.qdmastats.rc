@@ -19,6 +19,10 @@ on property:vendor.qti.qdma.oper.mode=2
     write /data/vendor/qdma/conf/qdma.conf "OperationMode:2"
     chown system system /data/vendor/qdma/conf/qdma.conf
 
+on property:vendor.qti.qdma.oper.mode=3
+    write /data/vendor/qdma/conf/qdma.conf "OperationMode:3"
+    chown system system /data/vendor/qdma/conf/qdma.conf
+
 service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
     class late_start
     user system
