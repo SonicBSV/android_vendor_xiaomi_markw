@@ -103,8 +103,8 @@ special_mode_mask values:
       <CPPSnapshot>s5k3l8_cpp_snapshot</CPPSnapshot>
       <CPPVideo>s5k3l8_cpp_video</CPPVideo>
       <CPPLiveshot>s5k3l8_cpp_liveshot</CPPLiveshot>
-      <A3Preview>s5k3l8_zsl_preview_ak7345</A3Preview>
-      <A3Video>s5k3l8_zsl_video_ak7345</A3Video>
+      <A3Preview>s5k3l8_default_preview_ak7345</A3Preview>
+      <A3Video>s5k3l8_default_video_ak7345</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
       <ISPPreview>s5k3l8_hfr_60</ISPPreview>
