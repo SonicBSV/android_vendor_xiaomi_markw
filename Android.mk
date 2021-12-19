@@ -545,6 +545,18 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Lens
+LOCAL_MODULE_OWNER  := xiaomi
+LOCAL_SRC_FILES := proprietary/product/priv-app/Lens/Lens.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := CallEnhancement
 LOCAL_MODULE_OWNER  := xiaomi
 LOCAL_SRC_FILES := proprietary/product/priv-app/CallEnhancement/CallEnhancement.apk
